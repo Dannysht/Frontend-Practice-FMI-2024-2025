@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: sans-serif;
+}
+
+ol li::marker {
+    color: red;
+}
+
+ol li:nth-child(2) {
+    color: #0073e6;
+    font-weight: bold;
+}
+
+ol li:nth-last-of-type(2) {
+    text-decoration: underline;
+}
+
+ol li:nth-last-child(1) {
+    font-style: italic;
+}
+
+ol li:nth-of-type(3) {
+    background-color: #e0f7fa;
+}
+
+ol li:nth-child(even)::marker {
+    color: green;
+}
+
+ol li:first-child::marker {
+    color: blue;
+}
+
+ol li:last-child::marker {
+    color: purple;
+}
+
+ol li {
+    margin-left: 2rem;
+}
+
+ol,
+form {
+    border: 2px solid green;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+section>h2 {
+    color: darkblue;
+}
+
+label+input {
+    background-color: lightgray;
+}
+
+label.required::after {
+    content: '*';
+    color: red;
+}
+
+label~input {
+    border: 1px solid green;
+}
+
+input {
+    margin-bottom: 1rem;
+}
+
+input[required] {
+    border: 2px solid red;
+}
+
+input[type="text"] {
+    background-color: lightyellow;
+}
+
+[data-info~="example"] {
+    color: aquamarine;
+}
+
+label[lang|="bg"] {
+    background-color: lightblue;
+}
+
+input::placeholder {
+    color: hotpink;
+}
+
+input:focus {
+    border-color: orange;
+    outline: none;
+}
+
+input:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+#name {
+    background-color: blue;
+}
+
+button {
+    margin-top: 1rem;
+    background-color: green;
+    color: white;
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgreen
+}
+
+a:visited {
+    color: red;
+}
+
+a:visited:hover {
+    color: darkred;
+}
+
+a[href^="https"] {
+    font-weight: bold;
+}
+
+/* Attribute selector with value ending: selects elements with the specified attribute ending with a value */
+a[href$=".pdf"] {
+    font-style: italic;
+}
+
+a[href*="example"] {
+    text-decoration: underline;
+}
