@@ -1,0 +1,14 @@
+h1 {
+    position: fixed;
+    background-color: blue;
+}
+
+p {
+    font-size: 48px;
+}
+
+h2 {
+    position: sticky;
+    top: 0;
+    background-color: orange;
+}
