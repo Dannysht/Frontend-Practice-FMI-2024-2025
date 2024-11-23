@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Валидация на форма</title>
 </head>
+
 <body>
 
-<form id="registrationForm">
-  <h2>Форма за валидация</h2>
+  <form id="registrationForm">
+    <h2>Форма за валидация</h2>
 
-  <div class="form-group">
-    <label for="username">Потребителско име <span id="usernameError"></span></label>
-    <input type="text" id="username" name="username" placeholder="Въведете потребителско име" required>
-  </div>
+    <div class="form-group">
+      <label for="username">Потребителско име <span id="usernameError"></span></label>
+      <input type="text" id="username" name="username" placeholder="Въведете потребителско име" required>
+    </div>
 
-  <div class="form-group">
-    <label for="email">Имейл <span id="emailError"></span></label>
-    <input type="email" id="email" name="email" placeholder="Въведете имейл" required>
-  </div>
+    <div class="form-group">
+      <label for="email">Имейл <span id="emailError"></span></label>
+      <input type="email" id="email" name="email" placeholder="Въведете имейл" required>
+    </div>
 
-  <div class="form-group">
-    <label for="password">Парола <span id="passwordError"></span></label>
-    <input type="password" id="password" name="password" placeholder="Въведете парола" required minlength="8">
-  </div>
+    <div class="form-group">
+      <label for="password">Парола <span id="passwordError"></span></label>
+      <input type="password" id="password" name="password" placeholder="Въведете парола" required minlength="8">
+    </div>
 
-  <div class="form-group">
-    <label for="confirmPassword">Потвърдете Парола <span id="confirmPasswordError"></span></label>
-    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Потвърдете парола" required>
-  </div>
+    <div class="form-group">
+      <label for="confirmPassword">Потвърдете Парола <span id="confirmPasswordError"></span></label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Потвърдете парола" required>
+    </div>
 
-  <div class="form-group">
-    <label for="age">Възраст <span id="ageError"></span></label>
-    <input type="number" id="age" name="age" placeholder="Въведете възрастта си" required min="18" max="100">
-  </div>
+    <div class="form-group">
+      <label for="age">Възраст <span id="ageError"></span></label>
+      <input type="number" id="age" name="age" placeholder="Въведете възрастта си" required min="18" max="100">
+    </div>
 
-  <div class="form-group">
-    <label for="country">Държава</label>
-    <select id="country" name="country" required>
-      <option value="">Изберете държавата си</option>
-      <option value="България">България</option>
-      <option value="Канада">Канада</option>
-      <option value="Индия">Индия</option>
-    </select>
-  </div>
+    <div class="form-group">
+      <label for="country">Държава</label>
+      <select id="country" name="country" required>
+        <option value="">Изберете държавата си</option>
+        <option value="България">България</option>
+        <option value="Канада">Канада</option>
+        <option value="Индия">Индия</option>
+      </select>
+    </div>
 
-  <div class="form-group terms">
-    <input type="checkbox" id="terms" name="terms" required>
-    <label>
-      Съгласен съм с условията за ползване
-    </label>
-    <span id="termsError"></span>
-  </div>
+    <div class="form-group terms">
+      <input type="checkbox" id="terms" name="terms" required>
+      <label>
+        Съгласен съм с условията за ползване
+      </label>
+      <span id="termsError"></span>
+    </div>
 
-  <button type="submit" id="submitButton" disabled>Регистрирация</button>
-</form>
+    <button type="submit" id="submitButton" disabled>Регистрирация</button>
+  </form>
 
 </body>
+
 </html>

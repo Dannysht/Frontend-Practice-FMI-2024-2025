@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
 }
+
 form {
   max-width: 400px;
   margin: 20px auto;
@@ -9,14 +10,17 @@ form {
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .form-group {
   margin-bottom: 15px;
 }
+
 .form-group label {
   display: block;
   font-weight: bold;
 }
-.form-group input, 
+
+.form-group input,
 .form-group select {
   width: 100%;
   padding: 8px;
@@ -24,10 +28,12 @@ form {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 .form-group span {
   color: red;
   font-size: 0.9em;
 }
+
 .terms {
   display: flex;
   align-items: center;
@@ -42,7 +48,8 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
-    button:disabled {
-      cursor: not-allowed;
-      background-color: #ccc;
-    }
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+}
