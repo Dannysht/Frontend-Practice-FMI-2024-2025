@@ -9,6 +9,6 @@ p {
 
 h2 {
     position: sticky;
-    top: 0;
+    top: 0px;
     background-color: orange;
 }
