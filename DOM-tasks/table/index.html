@@ -25,7 +25,7 @@
     <tbody>
     </tbody>
   </table>
-  <form>
+  <form id="filterForm">
     <p><b>Сортиране:</b></p>
     <label>
       <input type="radio" name="sort" value="none" checked> Без сортиране
@@ -38,7 +38,7 @@
     </label>
 
     <p><b>Държава:</b></p>
-    <select name="country">
+    <select id="country" name="country">
       <option value="all">Всички държави</option>
       <option value="България">България</option>
       <option value="Германия">Германия</option>
@@ -48,7 +48,7 @@
     </select>
 
     <p><b>Професия:</b></p>
-    <select name="profession">
+    <select id="profession" name="profession">
       <option value="all">Всички професии</option>
       <option value="Автомонтьор">Автомонтьор</option>
       <option value="Програмист">Програмист</option>
@@ -61,18 +61,19 @@
     <div class="slider-container">
       <label>
         Минимум:
-        <input type="range" name="minAge" min="0" max="100" value="18" step="1">
+        <input type="range" id="minAge" name="minAge" min="0" max="100" value="0" step="1">
       </label>
     </div>
     <div class="slider-container">
       <label>
         Максимум:
-        <input type="range" name="maxAge" min="0" max="100" value="60" step="1">
+        <input type="range" id="maxAge" name="maxAge" min="0" max="100" value="100" step="1">
       </label>
     </div>
 
     <button type="submit">Приложи</button>
   </form>
+  <script src="script.js"></script>
 </body>
 
 </html>
