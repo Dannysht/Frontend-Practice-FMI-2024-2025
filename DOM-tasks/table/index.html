@@ -25,6 +25,55 @@
     <tbody>
     </tbody>
   </table>
+  <form id="filterForm">
+    <p><b>Сортиране:</b></p>
+    <label>
+      <input type="radio" name="sort" value="none" checked> Без сортиране
+    </label><br>
+    <label>
+      <input type="radio" name="sort" value="name"> Име
+    </label><br>
+    <label>
+      <input type="radio" name="sort" value="age"> Години
+    </label>
+
+    <p><b>Държава:</b></p>
+    <select id="country" name="country">
+      <option value="all">Всички държави</option>
+      <option value="България">България</option>
+      <option value="Германия">Германия</option>
+      <option value="Дания">Дания</option>
+      <option value="САЩ">САЩ</option>
+      <option value="Франция">Франция</option>
+    </select>
+
+    <p><b>Професия:</b></p>
+    <select id="profession" name="profession">
+      <option value="all">Всички професии</option>
+      <option value="Автомонтьор">Автомонтьор</option>
+      <option value="Програмист">Програмист</option>
+      <option value="Рапър">Рапър</option>
+      <option value="Учител">Учител</option>
+      <option value="HR">HR</option>
+    </select>
+
+    <p><b>Години:</b></p>
+    <div class="slider-container">
+      <label>
+        Минимум:
+        <input type="range" id="minAge" name="minAge" min="0" max="100" value="0" step="1">
+      </label>
+    </div>
+    <div class="slider-container">
+      <label>
+        Максимум:
+        <input type="range" id="maxAge" name="maxAge" min="0" max="100" value="100" step="1">
+      </label>
+    </div>
+
+    <button type="submit">Приложи</button>
+  </form>
+  <script src="script.js"></script>
 </body>
 
 </html>
